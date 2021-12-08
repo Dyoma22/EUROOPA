@@ -24,10 +24,16 @@ while True:
 		print("Sofia")
 	elif a=="Bosnia and Herzegovina":
 		print("Sarajevo")
-	elif a=="Albania":
-		print("Tirana")
-	elif a=="Albania":
-		print("Tirana")
+	elif a=="Vatican":
+		print("Vatican")
+	elif a=="United Kingdom":
+		print("London")
+	elif a=="Hungary":
+		print("Budapest")
+	elif a=="Germany":
+		print("Berlin")
+	elif a=="Greece":
+		print("Athens")
 
 
 
