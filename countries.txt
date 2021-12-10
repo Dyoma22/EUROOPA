@@ -1,11 +1,9 @@
-Estonia-Tallinn
+Austria-Vienna
 Albania-Tirana
 Belgium-Brussels
 Czechia-Prague
 Poland-Warsaw
 Portugal-Lisbon
-Finland-Helsinki
-France-Paris
 Germany-Berlin
 Sweden-Stockholm
 Spain-Madrid
@@ -14,5 +12,6 @@ Norway-Oslo
 Moldova-Chisinau
 Greece-Athens
 Bulgaria-Sofia
-Austria-Vienna
-Switzerland-Bern
+France-Paris
+Finland-Helsinki
+Estonia-Tallinn

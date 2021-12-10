@@ -21,17 +21,17 @@ Capitals["France"]="Paris"
 Capitals["Finland"]="Helsinki"
 Capitals["Estonia"]="Tallinn"
 Countries=["Austria","Albania","Belgium","Czechia","Poland","Portugal","Germany","Sweden","Spain","Serbia","Norway","Moldova","Greece","Bulgaria","France","Finland","Estonia"]
-for country in Countries:
-	country=input("Enter your country:")
-	if country in Capitals:
-		print("The capital of country:" +country +" - "+Capitals[country])
-	else:
-		 print("There is no country in the wiki with name " +country)
-		 q=input("Did you want add " +country+ " in Wiki?\nYes or No - ")
-	if q=="No":
-		print("Goodbye!")
-	if q=="Yes":
-		print ("Soon!")
+while True:
+	w=input("Функция:\nНайти страну - 1\nДобавить страну - 2")
+	if w=="1":
+		count()
+	elif w=="2":
+		country()
+
+
+
+
+		
 		
 
 	

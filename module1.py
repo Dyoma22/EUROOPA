@@ -19,3 +19,17 @@ def sonastik():
         s=gTTS(text=capitals[6],lang="en",slow=True).save("countries.mp3")
         os.system("countries.mp3")
         a=input()
+def country ():
+	countries=input("Введите страну - ")
+	capitals=input("Введите столицу - ")
+	with open("countries", "a") as countries:
+		countries.write(country+"\n")
+	with open("capitals.txt", "a") as capitals: 
+		capitals.write(capital+"\n")
+def count():
+    for country in Countries:
+        country=input("Enter your country:")
+    if Countries in Capitals:
+        print("The capital of country:" +country +" - "+Capitals[country])
+
+
