@@ -22,7 +22,7 @@ def sonastik():
 def country ():
 	countries=input("Введите страну - ")
 	capitals=input("Введите столицу - ")
-	with open("countries", "a") as countries:
+	with open("countries.txt", "a") as countries:
 		countries.write(country+"\n")
 	with open("capitals.txt", "a") as capitals: 
 		capitals.write(capital+"\n")
