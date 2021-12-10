@@ -1,54 +1,68 @@
+from module1 import*
+from random import*
+from gtts import gTTS
 Capitals={}
 Capitals=dict()
-Capitals=["Austria","Azerbaijan","Albania","Andorra","Armenia","Belarus","Belgium","Bulgaria","Bosnia and Herzegovina","Vatican","United Kingdom","Hungary","Germany","Greece","Georgia","Denmark","Ireland","Iceland","Spain","Italy","Kazakhstan","Cyprus","Latvia","Lithuania","Liechtenstein","Luxembourg","Malta","Moldova","Monaco","Netherlands","Norway","Poland","Portugal","RepublicofMacedonia","Russia","Romania","SanMarino","Serbia","Slovakia","Slovenia","Turkey","Ukraine","Finland","France","Croatia","Montenegro","Czech","Switzerland","Sweden","Estonia"]
-Countries=["Vein","Baku","Tirana","Andorra la Vella","Yerevan","Minsk","Brussels","Sofia","Sarajevo","Vatican","London","Budapest","Berlin","Athens","Tbilisi","Copenhagen","Dublin","Reykjavik","Madrid","Rome","Astana","Nicosia","Riga","Vilnius","Vaduz","Luxembourg","Valletta","Kishinev","Monaco","Amsterdam","Oslo","Warsaw","Lisbon","Skopje","Moscow","Bucharest","San Marino","Belgrade","Bratis", "lava","Ljubljana","Ankara","Kiev","Helsinki","Paris","Zagreb","Podgorica","Prague","Berne","Stockholm","Tallinn"]
-
-while True:
-	print("Добро пожаловать!")
-	a=input("Напишите страну или столицу - ")
-	if a=="Austria":
-		print("Vein")
-	elif a=="Azerbaijan":
-		print("Baku")
-	elif a=="Albania":
-		print("Tirana")
-	elif a=="Andorra":
-		print("Andorra la Vella")
-	elif a=="Armenia":
-		print("Yerevan")
-	elif a=="Belarus":
-		print("Minsk")
-	elif a=="Belgium":
-		print("Brussels")
-	elif a=="Bulgaria":
-		print("Sofia")
-	elif a=="Bosnia and Herzegovina":
-		print("Sarajevo")
-	elif a=="Vatican":
-		print("Vatican")
-	elif a=="United Kingdom":
-		print("London")
-	elif a=="Hungary":
-		print("Budapest")
-	elif a=="Germany":
-		print("Berlin")
-	elif a=="Greece":
-		print("Athens")
-
-
-
-
-
-
-
-
-
-
-
+Capitals["Austria"]="Vienna"
+Capitals["Albania"]="Tirana"
+Capitals["Belgium"]="Brussels"
+Capitals["Czechia"]="Prague"
+Capitals["Poland"]="Warsaw"
+Capitals["Portugal"]="Lisbon"
+Capitals["Germany"]="Berlin"
+Capitals["Sweden"]="Stockholm"
+Capitals["Spain"]="Madrid"
+Capitals["Serbia"]="Belgrade"
+Capitals["Norway"]="Oslo"
+Capitals["Moldova"]="Chisinau"
+Capitals["Greece"]="Athens"
+Capitals["Bulgaria"]="Sofia"
+Capitals["France"]="Paris"
+Capitals["Finland"]="Helsinki"
+Capitals["Estonia"]="Tallinn"
+Countries=["Austria","Albania","Belgium","Czechia","Poland","Portugal","Germany","Sweden","Spain","Serbia","Norway","Moldova","Greece","Bulgaria","France","Finland","Estonia"]
 for country in Countries:
+	country=input("Enter your country:")
 	if country in Capitals:
-		print("Столица страны " + country + ": " + Capitals[country])
+		print("The capital of country:" +country +" - "+Capitals[country])
 	else:
-		print("В базе нет страны c названием " + country)
+		 print("There is no country in the wiki with name " +country)
+		 q=input("Did you want add " +country+ " in Wiki?\nYes or No - ")
+	if q=="No":
+		print("Goodbye!")
+	if q=="Yes":
+		print ("Soon!")
+		
+
+	
+		
+
+
+		
+
+		 
+		 
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s=gTTS(text=Countries[0],lang="et",slow=True).save("heli.mp3")
+os.system("heli.mp3")
 
 
